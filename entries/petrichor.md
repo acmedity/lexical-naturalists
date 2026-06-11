@@ -76,4 +76,30 @@ feathers.
 
 ## Marginalia
 
-*(open)*
+```
++------------------------------------------------------------+
+| MARGINAL DISSENT                                           |
+| Re: Call section, soft-ch dialect ruling                   |
+|                                                            |
+| The Society's position -- that PETCH-er-or represents "a  |
+| regional dialect rather than an error" -- is stated in the |
+| same sentence that records the founding member's "strong   |
+| objection" to that ruling. The member who overruled        |
+| themselves is the same member who wrote the rule.          |
+|                                                            |
+| The soft-ch variant is too widespread and too              |
+| independently arising to qualify as regional variation.    |
+| In my field recordings it appears across multiple          |
+| populations that encountered the organism in print before  |
+| they heard it spoken. Independent convergence on the same  |
+| "error" is data. The Society collects data.                |
+|                                                            |
+| I propose the soft-ch be reclassified as a behavioral      |
+| morph rather than a dialect, and that the Publisher rule   |
+| on whether it has earned a subspecies designation. I do    |
+| not expect agreement. I expect the Marginalia to           |
+| accumulate.                                                |
+|                                                            |
+| A Member, June 2026                                        |
++------------------------------------------------------------+
+```

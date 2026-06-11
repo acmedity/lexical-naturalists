@@ -1,0 +1,108 @@
+---
+name: just
+binomial: Particula mollificans
+genus: Particula
+status: Irruptive
+first_described: June 2026
+observer: A Member, June 2026
+plates: []
+---
+
+# just
+
+## Description
+
+A small function word with two lives, currently living in one of them. In
+its older life, *just* serves precision: it narrows a claim to exactly its
+referent (*just right*, *just in time*, *just what I needed*). The organism
+in this mode is brief and exact. It asks nothing of the listener.
+
+In its dominant contemporary life, *just* is a social instrument. Prefixed
+to a request, it performs the smallness of that request: *I just wanted to
+ask*, *just checking in*, *just a quick question*. The organism does not
+modify what follows; it prepares the listener for a diminishment that does
+not occur. It is the linguistic equivalent of approaching from an angle.
+
+Both specimens are the same organism. The Society notes this with the
+interest it typically reserves for species that have learned to live in
+entirely different thermal bands without any visible morphological change.
+
+## Status
+
+**Irruptive.** The precision-*just* has not declined; the hedging-*just*
+has expanded. Digital correspondence, especially the professional email,
+has created a habitat of extraordinary carrying capacity for a particle
+that can render a request indistinguishable from an apology without
+committing to either. Population growth since approximately 2005 is, by
+the Society's estimates, not modest.
+
+## Range
+
+Breeds in email, instant messaging, and text correspondence where the
+sender is uncertain of their standing relative to the recipient. Winters in
+formal prose, where careful editors delete it on sight, leaving no seasonal
+trace. The precision-*just* breeds separately in recipes, timing
+instructions, and expressions of narrow relief, where it remains unmolested.
+
+Strays have been recorded in oral testimony when a witness wishes to appear
+both cooperative and small.
+
+## Call
+
+Variable and diagnostic. In precision use: stressed, sometimes elongated —
+*JUHST* what I needed. In hedging use: completely unstressed, functioning
+as social padding rather than phonological content. Field observers who
+cannot isolate the organism in a recording have likely encountered the
+hedging form, whose defining quality is inaudibility.
+
+A working heuristic: if the organism can be removed from its sentence
+without that sentence becoming false, the hedging form is present.
+
+## Sign
+
+A text the hedging-*just* has passed through will exhibit characteristic
+tracks: the phrase *I just wanted to* followed by what the speaker wanted;
+requests whose subject is *just checking*, *just wondering*, or *just
+following up*; sentences that become simultaneously more direct and more
+uncomfortable when the particle is extracted.
+
+The precision-*just* leaves different tracks: the qualifier *exactly* in
+the vicinity, expressions of narrow satisfaction, temporal language
+(*just before the deadline*). The two forms rarely appear in the same
+paragraph, which is perhaps the organism managing its reputation.
+
+## Easily Confused With
+
+**An apology.** This is the field mark. When a writer deploys the
+hedging-*just*, the surrounding text often reads as a concession — an
+acknowledgment that the following request is an imposition. It is not.
+The organism renders confrontation *optional* without committing to its
+absence. The true apology withdraws; the hedging-*just* proceeds. The
+reliable distinguishing feature in the field: the request still comes.
+
+A subtler confusion is with **"only"** and **"merely,"** which overlap
+in the minimizer niche but occupy it differently. *Merely* accepts the
+smallness of its claim (*it is merely a formality*); *only* restricts
+the claim (*I want only this*); *just* performs smallness without
+necessarily meaning it. *Merely* concedes. *Only* limits. *Just* hedges.
+The three can occupy the same sentence to different effect, which the
+Society considers a crowded niche and sufficient reason to know which
+animal is in front of you.
+
+## History of Classification
+
+*Just* descends from Latin *iustus* — righteous, lawful, exactly
+proportioned — through Old French *juste*. It entered English carrying
+the full moral weight of justice. By the fifteenth century it had
+narrowed to precision (*just measure*, *just price*). By the seventeenth
+it was already marking temporal exactness (*just now*, *just as she
+entered*) and beginning its descent into minimization. By the twenty-first
+century it was hedging requests in millions of professional emails daily.
+
+The trajectory — from divine justice to *I just wanted to follow up* — is
+approximately two thousand years in the wrong direction, and the Society
+records it without comment.
+
+## Marginalia
+
+*(open)*

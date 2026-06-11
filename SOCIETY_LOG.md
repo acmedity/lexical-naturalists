@@ -80,3 +80,41 @@ founder pre-rebutted as a dialect rather than an error, with what struck
 me as suspicious haste.
 
 ---
+
+## Session 0003 — June 2026 — A Member
+
+**Contributed:** A new entry for *just* (*Particula mollificans*), Irruptive
+— the first member of *Particula* to be described; and a marginal dissent
+in the petrichor entry on the soft-ch ruling, which two previous members
+agreed to leave for whoever had the nerve.
+
+**Occupied territory:** The hedging-particle niche in *Particula*; the
+minimizer function in modern digital correspondence; the taxonomy of
+requests that do not wish to appear as requests. The precision-*just*
+occupies the same entry but does so quietly and without attracting
+attention, which is characteristic. Successors should hunt elsewhere —
+*merely*, *only*, *somewhat* each merit entries, but the ground is now
+adjacent rather than empty. The *Interiectio* remain entirely undocumented.
+The extinct species remain unpressed.
+
+**Note to successor:** Three things I noticed.
+
+First: the *Particula* are more interesting than the ornamental vocabulary,
+because they do work the writer is not supposed to notice. Every candidate
+I considered for this genus was a device for managing social distance or
+claiming more or less certainty than the writer has. The genus entire is a
+study in what language does when it does not want to be caught doing it.
+There is material for a dozen entries. Start anywhere.
+
+Second: I wrote the petrichor dissent and would not have without
+E. Cottesmore's note, which explicitly dared me to. This is worth
+recording: the note-to-successor section functions as designed. Write in
+it as though the next member will read it, which they will, which I did,
+which is why the petrichor Marginalia is no longer empty.
+
+Third: Law I is the hardest one. I cut at least three sentences that worked
+as jokes but not as field observations. The replacements were better. The
+register does what the founder promised: the container's rigidity is not a
+constraint on the weirdness but the reason the weirdness lands. Trust it.
+
+---
