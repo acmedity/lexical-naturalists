@@ -1,0 +1,78 @@
+<svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <!-- PLATE I: pressed specimen, petrichor. Society of Lexical Naturalists.
+       Palette: paper #EFE6CF / iron-gall ink #3A3128 / stamp red #9C4A3C / tape #D9C89E / pencil #8B8378 -->
+
+  <!-- herbarium sheet -->
+  <rect width="700" height="520" fill="#EFE6CF"/>
+
+  <!-- paper aging: faint blotches and a stain, restrained -->
+  <ellipse cx="120" cy="430" rx="60" ry="38" fill="#D9C89E" opacity="0.18"/>
+  <ellipse cx="600" cy="90" rx="45" ry="30" fill="#D9C89E" opacity="0.14"/>
+  <ellipse cx="520" cy="470" rx="80" ry="20" fill="#C9B68A" opacity="0.10"/>
+  <circle cx="150" cy="120" r="26" fill="none" stroke="#B89B6B" stroke-width="2.5" opacity="0.14"/>
+
+  <!-- hand-ruled double border, slightly imperfect -->
+  <rect x="18" y="18" width="664" height="484" fill="none" stroke="#3A3128" stroke-width="1.6"/>
+  <path d="M 28 28 L 671 27.4 L 671.6 491 L 28.4 492 Z" fill="none" stroke="#3A3128" stroke-width="0.7"/>
+
+  <!-- plate heading -->
+  <text x="350" y="56" text-anchor="middle" font-size="15" letter-spacing="6" fill="#3A3128">PLATE I</text>
+  <line x1="300" y1="66" x2="400" y2="66" stroke="#3A3128" stroke-width="0.7"/>
+  <text x="350" y="84" text-anchor="middle" font-size="10.5" letter-spacing="2.5" fill="#3A3128">PRESSED SPECIMEN — TAXIDERMIED IN CONTEXT</text>
+
+  <!-- accession stamp, rotated, faded red -->
+  <g transform="rotate(-7 565 122)" opacity="0.78">
+    <rect x="470" y="96" width="190" height="52" fill="none" stroke="#9C4A3C" stroke-width="2"/>
+    <rect x="474" y="100" width="182" height="44" fill="none" stroke="#9C4A3C" stroke-width="0.8"/>
+    <text x="565" y="116" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#9C4A3C" font-family="'Courier New', monospace" font-weight="bold">SOC. LEXICAL NATURALISTS</text>
+    <text x="565" y="130" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#9C4A3C" font-family="'Courier New', monospace" font-weight="bold">ACCESSIONED · No. 0001</text>
+    <text x="565" y="141" text-anchor="middle" font-size="7.5" letter-spacing="1" fill="#9C4A3C" font-family="'Courier New', monospace">AUDITUM, NUMQUAM VISUM</text>
+  </g>
+
+  <!-- specimen shadow -->
+  <g transform="rotate(-2.5 320 235)">
+    <rect x="148" y="208" width="348" height="62" fill="#3A3128" opacity="0.10" rx="2"/>
+  </g>
+
+  <!-- the pressed specimen: a printed instance, cut from its source -->
+  <g transform="rotate(-2.5 318 230)">
+    <rect x="144" y="202" width="348" height="62" fill="#F7F0DC" stroke="#C9B68A" stroke-width="0.8"/>
+    <!-- surrounding context, trimmed mid-sentence: the specimen was cut from a perfume advertisement -->
+    <text x="318" y="222" text-anchor="middle" font-size="9" fill="#8B8378" font-style="italic">…top notes of bergamot and</text>
+    <text x="318" y="246" text-anchor="middle" font-size="30" letter-spacing="3" fill="#3A3128">petrichor</text>
+    <text x="318" y="259" text-anchor="middle" font-size="9" fill="#8B8378" font-style="italic">, for the man who has felt things…</text>
+  </g>
+
+  <!-- mounting tape, two strips -->
+  <g opacity="0.55">
+    <rect x="128" y="196" width="58" height="22" fill="#D9C89E" stroke="#C9B68A" stroke-width="0.5" transform="rotate(-38 157 207)"/>
+    <rect x="452" y="248" width="58" height="22" fill="#D9C89E" stroke="#C9B68A" stroke-width="0.5" transform="rotate(-38 481 259)"/>
+  </g>
+
+  <!-- entomological pin with shadow -->
+  <line x1="318" y1="208" x2="326" y2="190" stroke="#3A3128" stroke-width="1.4"/>
+  <circle cx="327" cy="188" r="3.2" fill="#3A3128"/>
+  <ellipse cx="315" cy="211" rx="6" ry="2" fill="#3A3128" opacity="0.18"/>
+
+  <!-- pencil annotation, collector's hand -->
+  <text x="150" y="312" font-size="11.5" fill="#8B8378" font-style="italic" transform="rotate(-1.5 150 312)">faint smugness still detectable — do not shelve near "ambrosial"</text>
+  <path d="M 152 318 q 80 6 168 2" fill="none" stroke="#8B8378" stroke-width="0.6" opacity="0.7"/>
+
+  <!-- collection label, typed, bottom-right -->
+  <g font-family="'Courier New', monospace" fill="#3A3128">
+    <rect x="368" y="346" width="296" height="138" fill="#F7F0DC" stroke="#3A3128" stroke-width="1.1"/>
+    <rect x="372" y="350" width="288" height="130" fill="none" stroke="#3A3128" stroke-width="0.5"/>
+    <text x="516" y="370" text-anchor="middle" font-size="9.5" letter-spacing="2">A FIELD GUIDE TO THE WORDS</text>
+    <line x1="384" y1="378" x2="648" y2="378" stroke="#3A3128" stroke-width="0.5"/>
+    <text x="384" y="396" font-size="10.5" font-style="italic" font-family="Georgia, serif">Vocabulum pluviae-superbum</text>
+    <text x="384" y="412" font-size="9">STATUS: Naturalized; exceeds carrying</text>
+    <text x="384" y="424" font-size="9">        capacity (obs. multiple)</text>
+    <text x="384" y="442" font-size="9">LOCALITY: perfume advertisement,</text>
+    <text x="384" y="454" font-size="9">        printed matter, June 2026</text>
+    <text x="384" y="472" font-size="9">COLL. &amp; DET.: A Founding Member</text>
+  </g>
+
+  <!-- folio caption -->
+  <text x="60" y="470" font-size="10" letter-spacing="1.5" fill="#3A3128">PETRICHOR</text>
+  <text x="60" y="484" font-size="8.5" fill="#8B8378" font-style="italic">The organism is not depicted. The organism cannot be depicted.</text>
+</svg>
