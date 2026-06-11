@@ -1,0 +1,109 @@
+<svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <!-- PLATE II: pressed specimens, wherefore. Society of Lexical Naturalists.
+       First pressing of a species with no wild population. Two cuttings:
+       one wild-collected (London, 1599), one bred in captivity (court filing, 2026).
+       Palette: paper #EFE6CF / iron-gall ink #3A3128 / stamp red #9C4A3C / tape #D9C89E / pencil #8B8378 -->
+
+  <!-- herbarium sheet -->
+  <rect width="700" height="520" fill="#EFE6CF"/>
+
+  <!-- paper aging: blotches, a ring, restrained -->
+  <ellipse cx="580" cy="440" rx="70" ry="34" fill="#D9C89E" opacity="0.16"/>
+  <ellipse cx="95" cy="95" rx="48" ry="30" fill="#D9C89E" opacity="0.14"/>
+  <ellipse cx="350" cy="500" rx="90" ry="16" fill="#C9B68A" opacity="0.10"/>
+  <circle cx="615" cy="330" r="24" fill="none" stroke="#B89B6B" stroke-width="2.5" opacity="0.13"/>
+
+  <!-- hand-ruled double border, slightly imperfect -->
+  <rect x="18" y="18" width="664" height="484" fill="none" stroke="#3A3128" stroke-width="1.6"/>
+  <path d="M 28 28 L 671.5 28.6 L 671 491.5 L 28.5 491 Z" fill="none" stroke="#3A3128" stroke-width="0.7"/>
+
+  <!-- plate heading -->
+  <text x="350" y="56" text-anchor="middle" font-size="15" letter-spacing="6" fill="#3A3128">PLATE II</text>
+  <line x1="298" y1="66" x2="402" y2="66" stroke="#3A3128" stroke-width="0.7"/>
+  <text x="350" y="84" text-anchor="middle" font-size="10.5" letter-spacing="2.5" fill="#3A3128">PRESSED SPECIMENS — WILD-COLLECTED AND CAPTIVE-BRED</text>
+
+  <!-- accession stamp, rotated, faded red -->
+  <g transform="rotate(5 135 132)" opacity="0.76">
+    <rect x="40" y="106" width="190" height="52" fill="none" stroke="#9C4A3C" stroke-width="2"/>
+    <rect x="44" y="110" width="182" height="44" fill="none" stroke="#9C4A3C" stroke-width="0.8"/>
+    <text x="135" y="126" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#9C4A3C" font-family="'Courier New', monospace" font-weight="bold">SOC. LEXICAL NATURALISTS</text>
+    <text x="135" y="140" text-anchor="middle" font-size="9.5" letter-spacing="1.6" fill="#9C4A3C" font-family="'Courier New', monospace" font-weight="bold">ACCESSIONED · No. 0002</text>
+    <text x="135" y="151" text-anchor="middle" font-size="7.5" letter-spacing="1" fill="#9C4A3C" font-family="'Courier New', monospace">AUDITUM, NUMQUAM VISUM</text>
+  </g>
+
+  <!-- status stamp, faded red, twice struck -->
+  <g transform="rotate(-9 540 150)" opacity="0.62">
+    <rect x="430" y="128" width="220" height="34" fill="none" stroke="#9C4A3C" stroke-width="2.2"/>
+    <text x="540" y="151" text-anchor="middle" font-size="13.5" letter-spacing="3.5" fill="#9C4A3C" font-family="'Courier New', monospace" font-weight="bold">EXTINCT IN THE WILD</text>
+  </g>
+  <g transform="rotate(-7.5 548 156)" opacity="0.22">
+    <rect x="438" y="134" width="220" height="34" fill="none" stroke="#9C4A3C" stroke-width="2.2"/>
+    <text x="548" y="157" text-anchor="middle" font-size="13.5" letter-spacing="3.5" fill="#9C4A3C" font-family="'Courier New', monospace" font-weight="bold">EXTINCT IN THE WILD</text>
+  </g>
+
+  <!-- SPECIMEN A: wild-collected, London 1599 -->
+  <g transform="rotate(-2 300 222)">
+    <rect x="92" y="196" width="420" height="60" fill="#3A3128" opacity="0.10" rx="2"/>
+    <rect x="88" y="190" width="420" height="60" fill="#F2E9CF" stroke="#C9B68A" stroke-width="0.8"/>
+    <text x="298" y="209" text-anchor="middle" font-size="9" fill="#8B8378" font-style="italic">O Romeo, Romeo,</text>
+    <text x="298" y="233" text-anchor="middle" font-size="26" letter-spacing="2.5" fill="#3A3128">wherefore</text>
+    <text x="298" y="246" text-anchor="middle" font-size="9" fill="#8B8378" font-style="italic">art thou Romeo?</text>
+  </g>
+  <!-- tape, specimen A -->
+  <g opacity="0.55">
+    <rect x="70" y="186" width="56" height="20" fill="#D9C89E" stroke="#C9B68A" stroke-width="0.5" transform="rotate(-36 98 196)"/>
+    <rect x="472" y="232" width="56" height="20" fill="#D9C89E" stroke="#C9B68A" stroke-width="0.5" transform="rotate(-36 500 242)"/>
+  </g>
+  <!-- pin, specimen A -->
+  <line x1="296" y1="196" x2="304" y2="178" stroke="#3A3128" stroke-width="1.4"/>
+  <circle cx="305" cy="176" r="3" fill="#3A3128"/>
+  <ellipse cx="293" cy="199" rx="6" ry="2" fill="#3A3128" opacity="0.18"/>
+  <!-- field tag, specimen A -->
+  <g font-family="'Courier New', monospace" fill="#3A3128" transform="rotate(-2 555 228)">
+    <rect x="524" y="206" width="128" height="44" fill="#F7F0DC" stroke="#3A3128" stroke-width="0.8"/>
+    <text x="532" y="221" font-size="8">SPEC. A — WILD</text>
+    <text x="532" y="233" font-size="8">LONDON, 1599</text>
+    <text x="532" y="245" font-size="8">printed quarto</text>
+  </g>
+
+  <!-- SPECIMEN B: captive-bred, court filing 2026 -->
+  <g transform="rotate(1.5 300 318)">
+    <rect x="92" y="296" width="420" height="56" fill="#3A3128" opacity="0.10" rx="2"/>
+    <rect x="88" y="290" width="420" height="56" fill="#F9F4E4" stroke="#C9B68A" stroke-width="0.8"/>
+    <text x="298" y="322" text-anchor="middle" font-size="20" letter-spacing="3" fill="#3A3128" font-family="'Courier New', monospace" font-weight="bold">WHEREFORE,</text>
+    <text x="298" y="338" text-anchor="middle" font-size="9" fill="#8B8378" font-style="italic" font-family="'Courier New', monospace">Plaintiff respectfully prays for the relief set forth…</text>
+  </g>
+  <!-- tape, specimen B -->
+  <g opacity="0.55">
+    <rect x="70" y="294" width="56" height="20" fill="#D9C89E" stroke="#C9B68A" stroke-width="0.5" transform="rotate(34 98 304)"/>
+    <rect x="472" y="322" width="56" height="20" fill="#D9C89E" stroke="#C9B68A" stroke-width="0.5" transform="rotate(34 500 332)"/>
+  </g>
+  <!-- field tag, specimen B -->
+  <g font-family="'Courier New', monospace" fill="#3A3128" transform="rotate(1.5 555 322)">
+    <rect x="524" y="300" width="128" height="44" fill="#F7F0DC" stroke="#3A3128" stroke-width="0.8"/>
+    <text x="532" y="315" font-size="8">SPEC. B — CAPTIVE</text>
+    <text x="532" y="327" font-size="8">COURT FILING, 2026</text>
+    <text x="532" y="339" font-size="8">bred at pub. expense</text>
+  </g>
+
+  <!-- pencil annotation, collector's hand -->
+  <text x="92" y="378" font-size="11.5" fill="#8B8378" font-style="italic" transform="rotate(-1.2 92 378)">spec. A still asking. four centuries; no answer accepted yet</text>
+  <path d="M 94 384 q 90 5 178 1" fill="none" stroke="#8B8378" stroke-width="0.6" opacity="0.7"/>
+
+  <!-- collection label, typed, bottom-right -->
+  <g font-family="'Courier New', monospace" fill="#3A3128">
+    <rect x="368" y="368" width="296" height="118" fill="#F7F0DC" stroke="#3A3128" stroke-width="1.1"/>
+    <rect x="372" y="372" width="288" height="110" fill="none" stroke="#3A3128" stroke-width="0.5"/>
+    <text x="516" y="392" text-anchor="middle" font-size="9.5" letter-spacing="2">A FIELD GUIDE TO THE WORDS</text>
+    <line x1="384" y1="400" x2="648" y2="400" stroke="#3A3128" stroke-width="0.5"/>
+    <text x="384" y="418" font-size="10.5" font-style="italic" font-family="Georgia, serif">Particula forensis</text>
+    <text x="384" y="434" font-size="9">STATUS: Extinct in the Wild; captive</text>
+    <text x="384" y="446" font-size="9">        stock stable (see spec. B)</text>
+    <text x="384" y="462" font-size="9">NOTE: spec. A widely misidentified;</text>
+    <text x="384" y="474" font-size="9">COLL. &amp; DET.: R. Ankerwycke, vi.2026</text>
+  </g>
+
+  <!-- folio caption -->
+  <text x="60" y="456" font-size="10" letter-spacing="1.5" fill="#3A3128">WHEREFORE</text>
+  <text x="60" y="470" font-size="8.5" fill="#8B8378" font-style="italic">The organism is not depicted. The question, however, survives pressing.</text>
+</svg>

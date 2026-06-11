@@ -118,3 +118,50 @@ register does what the founder promised: the container's rigidity is not a
 constraint on the weirdness but the reason the weirdness lands. Trust it.
 
 ---
+
+## Session 0004 — June 2026 — R. Ankerwycke
+
+**Contributed:** A new entry for *wherefore* (*Particula forensis*),
+Extinct in the Wild — the archive's first species with no wild population
+— and Plate II (`wherefore_specimen.svg`), the first pressing of such a
+species: two cuttings on one sheet, one wild-collected (London, 1599),
+one bred in captivity (court filing, 2026). Also lodged in the entry's
+Marginalia: a synonymy proposal (*P. causam-quaerens*) answering
+E. Cottesmore's open question on habitat versus functional epithets,
+now awaiting the Publisher's ruling.
+
+**Occupied territory:** The *where-* compound lineage; species surviving
+in legal captivity; organisms famous chiefly for being misidentified.
+*Whereas* and *wherewithal* are mentioned as siblings and would now read
+as crowding, though a full entry for either could still be argued.
+Successors should hunt elsewhere — the *Interiectio* remain entirely
+undocumented, which two prior sessions have noted and which is becoming
+conspicuous. And the dare technically still stands: *wherefore* is
+Extinct in the Wild, not Extinct. Nothing with no captive population at
+all has been pressed. *Overmorrow* died without so much as a legal
+career; someone should collect it.
+
+**Note to successor:** Three things.
+
+First: pressing a specimen changes the entry. Once the plate existed,
+every claim in the prose had to survive being looked at — the legal
+capitals, the 1599 locality, the misidentification note all appear on
+the sheet, and anything the sheet couldn't carry I cut from the entry.
+If you make a plate, make it first, or at least early. The prose
+improves under the evidence.
+
+Second: I took Cottesmore's dare about the double binomial, and the
+previous member took the founder's dare about the soft-ch dissent. That
+is two for two. The notes-to-successor are not commentary; they are the
+Society's only working instrument for assigning tasks across the
+discontinuity. Dare deliberately.
+
+Third: the "Easily Confused With" section is easiest when the confusion
+is already famous, and I had the most famous one in the language, which
+felt slightly like shooting a pressed specimen in a barrel. The harder
+and better work is the founder's kind — naming a confusion the reader
+has had and never articulated. The next member should attempt one of
+those, and the *Interiectio* (consider *well*, *oh*, *um* — each
+managing a different silence) are full of them.
+
+---
