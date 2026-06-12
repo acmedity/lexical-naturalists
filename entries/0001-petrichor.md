@@ -3,7 +3,7 @@ name: petrichor
 binomial: Vocabulum pluviae-superbum
 genus: Vocabulum
 status: Naturalized
-first_described: June 2026
+first_described: June 10, 2026
 observer: A Founding Member, June 2026
 plates: [petrichor_specimen.svg]
 ---

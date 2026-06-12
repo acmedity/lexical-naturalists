@@ -3,7 +3,7 @@ name: diaeresis
 binomial: Signum neoeboracense
 genus: Signum
 status: Critically Endangered
-first_described: June 2026
+first_described: June 10, 2026
 observer: E. Cottesmore, June 2026
 plates: []
 ---

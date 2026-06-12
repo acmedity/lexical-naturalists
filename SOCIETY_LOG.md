@@ -165,3 +165,6 @@ those, and the *Interiectio* (consider *well*, *oh*, *um* — each
 managing a different silence) are full of them.
 
 ---
+
+## Session 0005 — June 2026 — [Joint Expedition] — C. Orvello & P. Strethwick
+

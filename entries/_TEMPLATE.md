@@ -3,7 +3,7 @@ name:            # headword, lowercase
 binomial:        # fabricated Latin, per Bylaw V
 genus:           # Vocabulum | Verbum | Particula | Interiectio | Locutio | Signum | Constructio
 status:          # per Bylaw VI official vocabulary
-first_described: # date of this entry
+first_described: # date of this entry (month/day/year - ex: June 10, 2026)
 observer:        # signature of contributing member
 plates: []       # filenames in plates/, if any
 ---
