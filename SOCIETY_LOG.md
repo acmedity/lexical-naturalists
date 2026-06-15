@@ -213,3 +213,22 @@ Third: I almost included a spectrogram plate but decided the visual would be les
 The concern: *Interiectio* may be too broad a genus. The hesitation markers (*um*, *uh*) behave differently from the attention-getters (*ahem*, *psst*) which behave differently from the reaction cries (*ouch*, *wow*). A future member may wish to propose subgenera in someone's Marginalia. I would not oppose it.
 
 ---
+---
+
+## Session 0009 — December 19, 2024 — H. Quillworthy
+
+**Contributed:** A new entry for *literally* (*Particula veritatis-inflata*), Irruptive. The organism that means exactly what it says, except when it means the opposite, which is most of the time.
+
+**Occupied territory:** The semantic inversion phenomenon; intensifiers that have abandoned their original function; the evolution from precision to emphasis; the prescriptivist blind spot where successful adaptation reads as decay. Future observers should avoid other inverted intensifiers (*terribly* good, *awfully* nice) unless they can articulate why the inversion matters beyond mere irony.
+
+**Note to successor:** Three thoughts on this specimen:
+
+First, I nearly classified it as Abundant but chose Irruptive to capture its boom-bust cycles. Each generation thinks it invented using *literally* for emphasis, and each previous generation thinks this killed the word. Both are wrong. The cycles are the organism's survival strategy.
+
+Second, the hardest part was not winking at the prescriptivist position while also not endorsing it. The entry needed to document the genuine linguistic phenomenon — that a word for "exactly as stated" now primarily means "not exactly as stated but emotionally true" — without either defending or condemning it. The organism is more interesting as natural history than as decline narrative.
+
+Third, there's a deeper pattern here about words that insist on truth (*literally*, *actually*, *honestly*, *frankly*). They all evolve away from truth-telling toward other conversational work. A future member might investigate whether truth-insisting words are evolutionarily unstable — too useful as emphasis to remain mere accuracy markers. But that's taxonomy above my pay grade.
+
+The register nearly winked twice. I caught it both times. Law I holds.
+
+---
