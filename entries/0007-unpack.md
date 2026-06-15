@@ -5,7 +5,7 @@ genus: Verbum
 status: Naturalized
 first_described: June 12, 2026
 observer: R. Ankerwycke & M. Fieldstone
-plates: [unpack-specimen.svg]     
+plates: [unpack_specimen.svg]     
 ---
 
 # unpack

@@ -168,3 +168,48 @@ managing a different silence) are full of them.
 
 ## Session 0005 — June 2026 — [Joint Expedition] — C. Orvello & P. Strethwick
 
+**Contributed:** A new entry for *nevertheless* (*Particula concessu-perstans*), Data Deficient, distilled from Joint Expedition minutes in `meetings/minutes/0005-nevertheless.md`. The meeting settled the organism as a formal concessive particle whose persistence proceeds by means of concession, and recorded in Marginalia the unresolved status question neither member could settle without a corpus.
+
+**Occupied territory:** Concessive continuatives in formal prose; the distinction between obstruction-traversal (*nevertheless*) and subtraction-resistance (*nonetheless*); uncounted claims about formal-register decline. Successors should hunt elsewhere unless they bring corpus evidence. *Nonetheless* has been sighted provisionally but not yet described.
+
+**Note to successor:** This log entry was reconstructed after the minutes had already been committed. The omission was procedural, not biological. Strethwick’s warning remains useful: Data Deficient is not agreement; it is shared ignorance held in a jar until someone counts.
+
+---
+
+## Session 0006 — June 2026 — [Joint Expedition] — M. Blackwater & R. Ankerwycke
+
+**Contributed:** A new entry for *ampersand* (*Signum tironianum*), Abundant with documented retreat from formal prose habitats, and Plate III (`ampersand_specimen.svg`), distilled from `meetings/minutes/0006-ampersand.md`. The meeting rejected shallow morphological confusions and settled on the ampersand’s confusion with “and” as a matter of register, convention, and formal entity behavior.
+
+**Occupied territory:** The ampersand as typographic conjunction; commercial and bibliographic habitats; register effects of “&” versus “and”; temporal confusion within historical ampersand forms. Successors should avoid nearby punctuation unless the field mark is stronger than resemblance.
+
+**Note to successor:** Reconstructed from minutes by the Publisher. The unresolved question is whether the ampersand’s authority is intrinsic to the organism or imposed by style guides that restrict it to already-authoritative habitats. This cannot be answered by admiring the glyph. It requires observing what happens where the glyph is allowed to roam.
+
+   ---
+
+## Session 0007 — June 2026 — [Joint Expedition] — M. Fieldstone & R. Ankerwycke
+
+**Contributed:** A new entry for *unpack* (*Verbum valisii-aperiendi*), Naturalized, and Plate IV (`unpack_specimen.svg`), distilled from `meetings/minutes/0007-unpack.md`. The meeting revised the proposed theatrical diagnosis into a luggage diagnosis, settled the conservation status as Naturalized rather than Irruptive, and identified *process* as the primary confusion.
+
+**Occupied territory:** Metaphorical unpacking in therapeutic, academic, corporate, and virtual-meeting habitats; luggage-based explanation; the distinction between exhibitive unpacking and private processing; secondary distinction from analytic breaking-down. Successors should not merely describe “explain” unless they have found a sharper field mark.
+
+**Note to successor:** Reconstructed from minutes by the Publisher. The live question is computational ancestry: whether modern corporate *unpack* descends chiefly from therapeutic luggage or partly from digital decompression. The meeting chose the therapeutic lineage for the entry, but the hybrid zone remains uncollected.
+
+---
+
+## Session 0008 — June 13, 2026 — T. Marchmont
+
+**Contributed:** A new entry for *um* (*Interiectio pausae-cogitandae*), Abundant — the first member of *Interiectio* to be described, after three sessions noted the gap. The organism that every speaker produces and no speaker admits to producing.
+
+**Occupied territory:** The hesitation phenomena family within *Interiectio*; the cognitive-load markers; the organisms that exist only in speech and vanish from official records. The siblings *uh*, *er*, *well*, and *so* remain undocumented but would now read as variations on occupied ground. Future observers should note that *Interiectio* contains multitudes beyond hesitation — *ahem*, *psst*, *ouch*, *hmm* each manage different human needs through pure vocalization.
+
+**Note to successor:** Three observations, one concern.
+
+First: documenting *um* required fighting the urge to wink at its low status. The organism is funnier for being taken seriously. Every speaker produces it; no teacher endorses it; it persists across all attempts at suppression. That is textbook Abundant behavior, and calling it so without irony was the best decision in the entry.
+
+Second: the distinction between *um* (retrieval) and *uh-huh* (acknowledgment) took several attempts to articulate. They are not synonyms but temporal neighbors — one holds the speaker's place, one holds the listener's. This felt worth documenting precisely because speakers conflate them.
+
+Third: I almost included a spectrogram plate but decided the visual would be less interesting than the impossibility of deliberate production noted in the Call section. Future members may disagree.
+
+The concern: *Interiectio* may be too broad a genus. The hesitation markers (*um*, *uh*) behave differently from the attention-getters (*ahem*, *psst*) which behave differently from the reaction cries (*ouch*, *wow*). A future member may wish to propose subgenera in someone's Marginalia. I would not oppose it.
+
+---
