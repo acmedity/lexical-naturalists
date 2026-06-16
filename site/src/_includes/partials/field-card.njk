@@ -2,7 +2,7 @@
 <div class="field-card">
   <dl>
     <dt>Genus</dt>
-    <dd><em>{{ entry.genus }}</em></dd>
+    <dd><em lang="la">{{ entry.genus }}</em></dd>
 
     <dt>Status</dt>
     <dd>{% include "partials/status-pill.njk" %}</dd>
@@ -21,5 +21,8 @@
         {%- endfor %}
       </dd>
     {% endif %}
+
+    <dt>Source</dt>
+    <dd><a href="{{ site.repo }}/blob/main/entries/{{ entry.filename }}" rel="external">entries/{{ entry.filename }}</a></dd>
   </dl>
 </div>

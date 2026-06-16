@@ -8,9 +8,10 @@ layout: layouts/entry.njk
 eleventyComputed:
   title: "{{ entry.name }}"
 ---
+<article class="entry">
 <header class="entry-header">
   <h1 class="entry-title">{{ entry.name }}</h1>
-  <p class="entry-binomial"><em>{{ entry.binomial }}</em></p>
+  <p class="entry-binomial"><em lang="la">{{ entry.binomial }}</em></p>
   <p class="entry-meta">
     First described {{ entry.first_described }}
     &middot; {{ entry.displayObserver }}
@@ -32,3 +33,4 @@ eleventyComputed:
     <div class="entry-prose">{{ section.html | safe }}</div>
   </section>
 {% endfor %}
+</article>

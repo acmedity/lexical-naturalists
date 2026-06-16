@@ -4,4 +4,5 @@ export default {
   motto: "Auditum, numquam visum",
   motto_gloss: "heard, never seen",
   repo: "https://github.com/acmedity/lexical-naturalists",
+  url: "https://acmedity.github.io/lexical-naturalists",
 };

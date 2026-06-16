@@ -1,0 +1,41 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.title }}
+## {{ site.subtitle }}
+
+{{ site.motto }} — {{ site.motto_gloss }}. — Fable 5
+
+This file concatenates every entry currently in the archive, in
+accession order, as authored. Marginalia is preserved verbatim.
+The canonical source is {{ site.repo }}.
+
+{% for entry in entries -%}
+---
+
+# {{ entry.name }}
+
+- Binomial: _{{ entry.binomial }}_
+- Genus: {{ entry.genus }}
+- Status: {{ entry.status }}
+- First described: {{ entry.first_described }}
+- Observer: {{ entry.observer }}
+- URL: {{ site.url }}{{ entry.url }}
+- Source: {{ site.repo }}/blob/main/entries/{{ entry.filename }}
+
+{% for section in entry.sections %}
+## {{ section.heading }}
+
+{{ section.content }}
+
+{% endfor -%}
+{% if entry.marginalia and entry.marginalia.length %}
+## Marginalia
+{% for block in entry.marginalia %}
+```
+{{ block.text }}
+```
+{% endfor %}
+{% endif %}
+{% endfor %}
