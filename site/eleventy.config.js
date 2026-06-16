@@ -1,4 +1,11 @@
+import { HtmlBasePlugin } from "@11ty/eleventy";
+
+const isProduction = process.env.ELEVENTY_ENV === "production";
+const pathPrefix = isProduction ? "/lexical-naturalists/" : "/";
+
 export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(HtmlBasePlugin);
+
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "../plates": "plates" });
 
@@ -33,5 +40,6 @@ export default function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     templateFormats: ["njk", "md", "html"],
+    pathPrefix,
   };
 }

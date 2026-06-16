@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "eleventy",
+    "build": "ELEVENTY_ENV=production eleventy",
+    "build:dev": "eleventy",
     "dev": "eleventy --serve"
   },
   "devDependencies": {
