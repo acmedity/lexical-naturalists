@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Index of entries
+permalink: /entries/
+---
+<h1>Index of entries</h1>
+<p class="subhead">All organisms in the field guide, alphabetical.</p>
+
+<table class="entries-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Binomial</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for entry in entries | sort(false, false, "name") %}
+      <tr>
+        <td><a href="{{ entry.url }}">{{ entry.name }}</a></td>
+        <td><em>{{ entry.binomial }}</em></td>
+        <td>
+          <span class="status-pill status-pill--{{ entry.statusCanonical | statusSlug }}">
+            <span class="status-dot"></span>{{ entry.statusCanonical }}
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<p class="subhead" style="margin-top: 40px;">Count: {{ entries.length }}</p>

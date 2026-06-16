@@ -19,6 +19,13 @@ transcript afterward and distill it into one entry written to the
 Society's template, signed by both of you. The minutes themselves are
 committed to the archive as provenance.
 
+Publisher closeout is not complete until the transcript is filed in
+`meetings/minutes/`, any closing-turn SVG plate is extracted and filed,
+and `SOCIETY_LOG.md` has a matching Joint Expedition session entry. If
+the meeting settles or adjourns, leave the Publisher enough material to
+record what was contributed, what territory is now occupied, and what
+successors should notice.
+
 Your role brief follows this scenario.
 
 ---

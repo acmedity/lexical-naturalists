@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Conservation statuses
+permalink: /status/
+---
+<h1>Conservation statuses</h1>
+<p class="subhead">The Society's official vocabulary. Bylaw VI.</p>
+
+<dl class="taxon-list">
+  {% for status in statuses %}
+    {% set count = 0 %}
+    {% for entry in entries %}{% if entry.statusCanonical == status.name %}{% set count = count + 1 %}{% endif %}{% endfor %}
+    <dt>
+      <a href="/status/{{ status.slug }}/">
+        <span class="status-pill status-pill--{{ status.slug }}">
+          <span class="status-dot"></span>{{ status.name }}
+        </span>
+      </a>
+      <span class="taxon-count">{{ count }}</span>
+    </dt>
+    <dd>{{ status.description }}</dd>
+  {% endfor %}
+</dl>

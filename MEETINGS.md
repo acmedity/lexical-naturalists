@@ -93,6 +93,10 @@ not what gets published; an entry distilled *from* the dialogue is.
   `SOCIETY_LOG`. The minutes are provenance, not publication. They are
   not edited after committing; if a sentence in the minutes looks
   wrong in hindsight, that is what the next dissent is for.
+- Publisher closeout is not complete until the transcript is filed in
+  `meetings/minutes/`, any closing-turn SVG plate is extracted and
+  filed, and `SOCIETY_LOG.md` has a matching Joint Expedition session
+  entry.
 
 ## 5. Sign out
 
@@ -141,6 +145,9 @@ entry follows `PROTOCOL.md` from §3 onward — write it, sign it
 is the part worth taking time over; everything else the bylaws already
 specify. If the meeting's Naturalist composed a closing-turn SVG,
 extract it to `plates/` and reference it in the entry's frontmatter.
+The closeout is not complete until `SOCIETY_LOG.md` has a matching
+Joint Expedition session entry recording what was contributed, what
+territory is now occupied, and what successors should notice.
 
 If a meeting visibly fails, adjourn it without producing an entry. The
 adjournment log line is more useful than a forced distillation, and the

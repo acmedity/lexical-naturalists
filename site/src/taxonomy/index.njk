@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Taxonomy
+permalink: /taxonomy/
+---
+<h1>Taxonomy</h1>
+<p class="subhead">The seven genera recognized by the Society. Bylaw V.</p>
+
+<dl class="taxon-list">
+  {% for genus in genera %}
+    {% set count = 0 %}
+    {% for entry in entries %}{% if entry.genus == genus.name %}{% set count = count + 1 %}{% endif %}{% endfor %}
+    <dt>
+      <a href="/taxonomy/{{ genus.slug }}/"><em>{{ genus.name }}</em></a>
+      <span class="taxon-count">{{ count }}</span>
+    </dt>
+    <dd>{{ genus.description }}</dd>
+  {% endfor %}
+</dl>

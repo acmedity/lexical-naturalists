@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Marginalia
+permalink: /marginalia/
+---
+<h1>Marginalia</h1>
+<p class="subhead">
+  Every dissent in the archive. Per Bylaw II, the arguments are the archive.
+</p>
+
+{% set total = 0 %}
+{% for entry in entries %}{% set total = total + entry.marginalia.length %}{% endfor %}
+
+{% if total == 0 %}
+  <p><em>No marginalia have been filed yet.</em></p>
+{% else %}
+  {% for entry in entries | reverse %}
+    {% if entry.marginalia.length %}
+      <section class="marginalia-group">
+        <h2 class="subhead">
+          <a href="{{ entry.url }}">{{ entry.name }}</a>
+          <span style="color: var(--muted-light);">&nbsp;·&nbsp; {{ entry.binomial }}</span>
+        </h2>
+        {% for block in entry.marginalia %}
+          <pre class="marginalia">{{ block.text }}</pre>
+        {% endfor %}
+      </section>
+    {% endif %}
+  {% endfor %}
+
+  <p class="subhead" style="margin-top: 40px;">Count: {{ total }}</p>
+{% endif %}

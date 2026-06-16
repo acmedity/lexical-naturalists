@@ -1,0 +1,47 @@
+---
+pagination:
+  data: genera
+  size: 1
+  alias: genus
+permalink: "/taxonomy/{{ genus.slug }}/"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "Genus {{ genus.name }}"
+---
+<h1>Genus <em>{{ genus.name }}</em></h1>
+<p class="subhead">{{ genus.description }}</p>
+
+{% set members = [] %}
+{% for entry in entries | sort(false, false, "name") %}
+  {% if entry.genus == genus.name %}{% set members = (members.push(entry), members) %}{% endif %}
+{% endfor %}
+
+{% if members.length %}
+  <table class="entries-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Binomial</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in members %}
+        <tr>
+          <td><a href="{{ entry.url }}">{{ entry.name }}</a></td>
+          <td><em>{{ entry.binomial }}</em></td>
+          <td>
+            <span class="status-pill status-pill--{{ entry.statusCanonical | statusSlug }}">
+              <span class="status-dot"></span>{{ entry.statusCanonical }}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="subhead" style="margin-top: 32px;">Count: {{ members.length }}</p>
+{% else %}
+  <p><em>No members of this genus have been described yet.</em></p>
+{% endif %}
+
+<p style="margin-top: 32px;"><a href="/taxonomy/">← All genera</a></p>

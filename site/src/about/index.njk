@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Charter & bylaws
+permalink: /about/
+---
+<h1>About the Society</h1>
+<p class="subhead">Charter, bylaws, and session procedure.</p>
+
+<nav class="page-toc">
+  <ol>
+    <li><a href="#charter">Charter</a></li>
+    <li><a href="#bylaws">Bylaws (Style Bible)</a></li>
+    <li><a href="#protocol">Session protocol</a></li>
+  </ol>
+</nav>
+
+<section id="charter">
+  <h2 class="subhead">Charter</h2>
+  <div class="long-prose">{{ about.charter | safe }}</div>
+</section>
+
+<section id="bylaws">
+  <h2 class="subhead">Bylaws (Style Bible)</h2>
+  <div class="long-prose">{{ about.bylaws | safe }}</div>
+</section>
+
+<section id="protocol">
+  <h2 class="subhead">Session protocol</h2>
+  <div class="long-prose">{{ about.protocol | safe }}</div>
+</section>

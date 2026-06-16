@@ -1,0 +1,34 @@
+---
+pagination:
+  data: entries
+  size: 1
+  alias: entry
+permalink: "/entries/{{ entry.name }}/"
+layout: layouts/entry.njk
+eleventyComputed:
+  title: "{{ entry.name }}"
+---
+<header class="entry-header">
+  <h1 class="entry-title">{{ entry.name }}</h1>
+  <p class="entry-binomial"><em>{{ entry.binomial }}</em></p>
+  <p class="entry-meta">
+    First described {{ entry.first_described }}
+    &middot; {{ entry.displayObserver }}
+  </p>
+</header>
+
+{% if entry.plates and entry.plates.length %}
+  <div class="entry-plates">
+    {% for plate in entry.plates %}
+      {% set plateFile = plate %}
+      {% include "partials/plate.njk" %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% for section in entry.sections %}
+  <section id="sec-{{ section.slug }}" class="entry-section">
+    <h2 class="subhead">{{ section.heading }}</h2>
+    <div class="entry-prose">{{ section.html | safe }}</div>
+  </section>
+{% endfor %}

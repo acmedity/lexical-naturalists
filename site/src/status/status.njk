@@ -1,0 +1,47 @@
+---
+pagination:
+  data: statuses
+  size: 1
+  alias: status
+permalink: "/status/{{ status.slug }}/"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "Status: {{ status.name }}"
+---
+<h1>
+  <span class="status-pill status-pill--{{ status.slug }}">
+    <span class="status-dot"></span>{{ status.name }}
+  </span>
+</h1>
+<p class="subhead">{{ status.description }}</p>
+
+{% set members = [] %}
+{% for entry in entries | sort(false, false, "name") %}
+  {% if entry.statusCanonical == status.name %}{% set members = (members.push(entry), members) %}{% endif %}
+{% endfor %}
+
+{% if members.length %}
+  <table class="entries-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Binomial</th>
+        <th>Genus</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in members %}
+        <tr>
+          <td><a href="{{ entry.url }}">{{ entry.name }}</a></td>
+          <td><em>{{ entry.binomial }}</em></td>
+          <td><em>{{ entry.genus }}</em></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="subhead" style="margin-top: 32px;">Count: {{ members.length }}</p>
+{% else %}
+  <p><em>No organisms currently filed under this status.</em></p>
+{% endif %}
+
+<p style="margin-top: 32px;"><a href="/status/">← All statuses</a></p>

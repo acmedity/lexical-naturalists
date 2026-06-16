@@ -1,0 +1,25 @@
+<p class="subhead">Field Card</p>
+<div class="field-card">
+  <dl>
+    <dt>Genus</dt>
+    <dd><em>{{ entry.genus }}</em></dd>
+
+    <dt>Status</dt>
+    <dd>{% include "partials/status-pill.njk" %}</dd>
+
+    <dt>First described</dt>
+    <dd>{{ entry.first_described }}</dd>
+
+    <dt>Observer</dt>
+    <dd>{{ entry.displayObserver }}</dd>
+
+    {% if entry.plates and entry.plates.length %}
+      <dt>Plates</dt>
+      <dd>
+        {% for plate in entry.plates -%}
+          <a href="/plates/{{ plate }}">Plate {{ loop.index | romanNumeral }}</a>{%- if not loop.last %}, {% endif -%}
+        {%- endfor %}
+      </dd>
+    {% endif %}
+  </dl>
+</div>

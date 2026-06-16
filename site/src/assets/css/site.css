@@ -1,0 +1,682 @@
+/* ============================================================
+   A Field Guide to the Words — base stylesheet
+   Palette + typography ported from lexical_backrooms/styles.py
+   Phase 0: tokens, reset, base typography, two-column shell.
+   ============================================================ */
+
+@font-face {
+  font-family: "PP Mondwest";
+  src: url("/assets/fonts/PPMondwest-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PxPlus IBM VGA8";
+  src: url("/assets/fonts/PxPlus_IBM_VGA8.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Palette */
+  --paper:         #e0ddd3;
+  --panel:         #d1cdc2;
+  --card:          #e8e6df;
+  --input:         #f0eee6;
+  --ink:           #111;
+  --border:        #333;
+  --muted:         #444;
+  --muted-light:   #666;
+  --status-green:  #00a000;
+  --accent-red:    #a93434;
+  --accent-yellow: #6f6400;
+  --separator:     #999;
+
+  /* Typography */
+  --font-body: "PP Mondwest", Georgia, serif;
+  --font-mono: "PxPlus IBM VGA8", "Courier New", monospace;
+
+  /* Sizing */
+  --sidebar-width: 240px;
+  --content-max:   720px;
+}
+
+/* Reset (minimal) */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img, svg { max-width: 100%; height: auto; display: block; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover { background: var(--ink); color: var(--paper); text-decoration: none; }
+
+/* Page shell — left TOC sidebar + main content. Right rail added in Phase 1. */
+.layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--paper);
+  padding: 40px 20px 24px;
+}
+
+.content {
+  padding: 40px 36px;
+  max-width: 100%;
+}
+
+.content-inner {
+  max-width: var(--content-max);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 2px solid var(--border);
+  padding: 12px 20px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--paper);
+}
+
+/* Headings — body font dominant, VGA reserved for class="subhead" */
+h1 { font-size: 44px; line-height: 1.1; margin: 0 0 12px; font-weight: 400; }
+h2 { font-size: 28px; line-height: 1.2; margin: 32px 0 12px; font-weight: 400; }
+h3 { font-size: 22px; margin: 24px 0 10px; font-weight: 400; }
+
+.subhead {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+hr.separator {
+  border: 0;
+  border-top: 1px dashed var(--separator);
+  margin: 28px 0;
+}
+
+p { margin: 0 0 1em; }
+
+/* ============================================================
+   Entry pages — three columns: sidebar | main | rail
+   ============================================================ */
+
+.layout--entry {
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr) 420px;
+}
+
+.rail {
+  background: var(--paper);
+  padding: 40px 24px 24px;
+}
+
+/* Entry header */
+.entry-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 18px;
+  margin-bottom: 28px;
+}
+
+.entry-title {
+  font-family: var(--font-body);
+  font-size: 52px;
+  line-height: 1;
+  margin: 0 0 6px;
+  font-weight: 400;
+}
+
+.entry-binomial {
+  font-family: var(--font-body);
+  font-size: 22px;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.entry-meta {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+  color: var(--muted-light);
+  margin: 0;
+}
+
+/* Plates */
+.entry-plates {
+  margin: 0 0 36px;
+}
+
+.entry-plate {
+  margin: 0 0 18px;
+  border: 2px solid var(--border);
+  background: var(--card);
+  padding: 0;
+  overflow: hidden;
+}
+
+.entry-plate img {
+  width: 100%;
+  display: block;
+}
+
+/* Entry sections */
+.entry-section {
+  margin: 0 0 28px;
+}
+
+.entry-section .subhead {
+  margin: 0 0 12px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+
+.entry-prose p {
+  margin: 0 0 0.9em;
+}
+
+.entry-prose strong {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.82em;
+  color: var(--ink);
+}
+
+.entry-prose em {
+  font-style: italic;
+}
+
+.entry-prose code, .entry-prose pre {
+  font-family: var(--font-mono);
+}
+
+/* ============================================================
+   Field card — mimics the .control-group / floating-label
+   fieldset look from newUI.html
+   ============================================================ */
+
+.field-card {
+  border: 1px solid var(--border);
+  padding: 14px;
+  background: var(--panel);
+  margin: 0 0 28px;
+}
+
+.field-card dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px 0;
+}
+
+.field-card dt {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+  color: var(--muted-light);
+  margin: 0;
+}
+
+.field-card dd {
+  margin: 2px 0 0;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+/* ============================================================
+   Status pill — black-on-white pill with leading status dot
+   ============================================================ */
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  padding: 2px 8px 2px 6px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--muted-light);
+}
+
+.status-pill--abundant              .status-dot { background: var(--status-green); }
+.status-pill--naturalized           .status-dot { background: var(--status-green); }
+.status-pill--irruptive             .status-dot { background: var(--accent-yellow); }
+.status-pill--vulnerable            .status-dot { background: var(--accent-yellow); }
+.status-pill--critically-endangered .status-dot { background: var(--accent-red); }
+.status-pill--extinct-in-the-wild   .status-dot { background: var(--muted); }
+.status-pill--extinct               .status-dot { background: var(--muted-light); }
+.status-pill--data-deficient        .status-dot { background: var(--muted-light); }
+
+.status-qualifier {
+  display: block;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+/* ============================================================
+   Marginalia — ASCII preserved literally, VGA monospace
+   (Phase 2 will float these next to anchored sections;
+    for now they stack in the right rail.)
+   ============================================================ */
+
+.rail-marginalia .subhead {
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.marginalia {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.3;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  margin: 0 0 14px;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* ============================================================
+   Responsive — rail falls below main, then sidebar collapses
+   ============================================================ */
+
+@media (max-width: 1180px) {
+  .layout--entry {
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  }
+  .rail {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .layout, .layout--entry {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .content {
+    padding: 24px 20px;
+  }
+  .entry-title { font-size: 40px; }
+}
+
+/* ============================================================
+   Site TOC (left sidebar nav on every page)
+   ============================================================ */
+
+.site-toc section {
+  margin-bottom: 22px;
+}
+
+.site-toc .subhead {
+  margin-bottom: 8px;
+}
+
+.site-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-toc li {
+  margin: 5px 0;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.site-toc a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.site-toc a:hover {
+  text-decoration: underline;
+  background: transparent;
+  color: var(--ink);
+}
+
+/* ============================================================
+   Cover (home)
+   ============================================================ */
+
+.cover-title {
+  font-size: 56px;
+  line-height: 1;
+  margin: 0 0 6px;
+}
+
+.cover-subtitle {
+  margin-bottom: 32px;
+}
+
+.cover-intro p {
+  font-size: 19px;
+  line-height: 1.55;
+  margin: 0 0 1em;
+  max-width: 640px;
+}
+
+.cover-latest {
+  margin: 18px 0 28px;
+}
+
+.cover-entry {
+  border-top: 1px solid var(--border);
+  padding: 20px 0;
+}
+
+.cover-entry:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.cover-entry-title {
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 0 0 8px;
+}
+
+.cover-entry-title a {
+  text-decoration: none;
+  color: var(--ink);
+}
+.cover-entry-title a:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+
+.cover-entry-binomial {
+  font-size: 18px;
+  color: var(--muted);
+  margin-left: 8px;
+}
+
+.cover-entry-meta {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  color: var(--muted);
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cover-entry-teaser {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+  max-width: 640px;
+}
+
+/* ============================================================
+   Index tables (entries, taxonomy children, status children)
+   ============================================================ */
+
+.entries-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 24px;
+}
+
+.entries-table th,
+.entries-table td {
+  text-align: left;
+  padding: 8px 14px 8px 0;
+  vertical-align: top;
+  border-bottom: 1px solid var(--separator);
+}
+
+.entries-table thead th {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.entries-table tbody tr:hover td {
+  background: var(--card);
+}
+
+.entries-table td a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.entries-table td a:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+
+/* ============================================================
+   Taxonomy / status indexes — definition list
+   ============================================================ */
+
+.taxon-list {
+  margin: 20px 0;
+}
+
+.taxon-list dt {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 22px;
+  margin-top: 18px;
+}
+
+.taxon-list dt a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.taxon-list dt a:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+
+.taxon-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--muted-light);
+}
+
+.taxon-list dd {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 560px;
+}
+
+/* ============================================================
+   Marginalia feed — sequence of dissents grouped by entry
+   ============================================================ */
+
+.marginalia-group {
+  margin: 28px 0;
+}
+
+.marginalia-group h2.subhead {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 22px;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.marginalia-group h2.subhead a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.marginalia-group h2.subhead a:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+
+.marginalia-group .marginalia {
+  max-width: 720px;
+}
+
+/* ============================================================
+   Long prose pages (about / charter / bylaws / protocol)
+   ============================================================ */
+
+.long-prose h1, .long-prose h2, .long-prose h3, .long-prose h4 {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.long-prose h2 {
+  font-size: 24px;
+  margin: 28px 0 10px;
+  border-bottom: 1px solid var(--separator);
+  padding-bottom: 4px;
+}
+
+.long-prose h3 {
+  font-size: 19px;
+  margin: 20px 0 8px;
+}
+
+.long-prose p, .long-prose li {
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.long-prose ul, .long-prose ol {
+  padding-left: 1.4em;
+  margin: 0 0 1em;
+}
+
+.long-prose li {
+  margin: 4px 0;
+}
+
+.long-prose strong {
+  font-weight: 400;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.82em;
+}
+
+.long-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--card);
+  padding: 0 4px;
+}
+
+.long-prose hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 28px 0;
+}
+
+.long-prose blockquote {
+  border-left: 2px solid var(--border);
+  margin: 16px 0;
+  padding: 4px 16px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ============================================================
+   Page TOC (mini, top of long-form pages)
+   ============================================================ */
+
+.page-toc {
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 12px 16px;
+  margin: 0 0 32px;
+  max-width: 360px;
+}
+
+.page-toc ol {
+  margin: 0;
+  padding-left: 1.6em;
+}
+
+.page-toc li {
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+.page-toc a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.page-toc a:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+
+/* ============================================================
+   Society-voiced blockquote (used on sightings)
+   ============================================================ */
+
+.society-note {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 12px 16px;
+  margin: 20px 0 24px;
+}
