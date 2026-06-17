@@ -393,7 +393,7 @@ p { margin: 0 0 1em; }
     grid-template-columns: 1fr;
   }
   .sidebar {
-    padding: 24px 20px;
+    padding: 0 20px;
     border-bottom: 1px solid var(--border);
   }
   .content {
@@ -405,6 +405,20 @@ p { margin: 0 0 1em; }
 /* ============================================================
    Site TOC (left sidebar nav on every page)
    ============================================================ */
+
+.site-toc-checkbox {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.site-toc-toggle {
+  display: none;
+}
 
 .site-toc section {
   margin-bottom: 22px;
@@ -435,6 +449,45 @@ p { margin: 0 0 1em; }
   text-decoration: underline;
   background: transparent;
   color: var(--ink);
+}
+
+@media (max-width: 720px) {
+  .site-toc-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .site-toc-checkbox:focus-visible + .site-toc-toggle {
+    outline: 1px dashed var(--border);
+    outline-offset: 3px;
+  }
+
+  .site-toc-arrow {
+    transition: transform 120ms ease;
+  }
+
+  .site-toc-panel {
+    display: none;
+    padding: 10px 0 20px;
+  }
+
+  .site-toc-checkbox:checked + .site-toc-toggle .site-toc-arrow {
+    transform: rotate(180deg);
+  }
+
+  .site-toc-checkbox:checked ~ .site-toc-panel {
+    display: block;
+  }
 }
 
 /* ============================================================
