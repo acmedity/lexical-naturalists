@@ -6,27 +6,23 @@ permalink: /entries/
 <h1>Index of entries</h1>
 <p class="subhead">All organisms in the field guide, alphabetical.</p>
 
-<table class="entries-table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Binomial</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for entry in entries | sort(false, false, "name") %}
-      <tr>
-        <td><a href="{{ entry.url }}">{{ entry.name }}</a></td>
-        <td><em>{{ entry.binomial }}</em></td>
-        <td>
-          <span class="status-pill status-pill--{{ entry.statusCanonical | statusSlug }}">
-            <span class="status-dot"></span>{{ entry.statusCanonical }}
-          </span>
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="entries-list" role="list" aria-label="Entries">
+  <div class="entries-list-header" aria-hidden="true">
+    <span>Name</span>
+    <span>Binomial</span>
+    <span>Status</span>
+  </div>
+  {% for entry in entries | sort(false, false, "name") %}
+    <a class="entries-list-row" href="{{ entry.url }}" role="listitem">
+      <span class="entries-list-name">{{ entry.name }}</span>
+      <span class="entries-list-binomial"><em>{{ entry.binomial }}</em></span>
+      <span class="entries-list-status">
+        <span class="status-pill status-pill--{{ entry.statusCanonical | statusSlug }}">
+          <span class="status-dot"></span>{{ entry.statusCanonical }}
+        </span>
+      </span>
+    </a>
+  {% endfor %}
+</div>
 
 <p class="subhead" style="margin-top: 40px;">Count: {{ entries.length }}</p>

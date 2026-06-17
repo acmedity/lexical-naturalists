@@ -517,26 +517,32 @@ p { margin: 0 0 1em; }
 
 .cover-entry {
   border-top: 1px solid var(--border);
-  padding: 20px 0;
 }
 
 .cover-entry:last-child {
   border-bottom: 1px solid var(--border);
 }
 
+.cover-entry-link {
+  display: block;
+  padding: 20px 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.cover-entry-link:hover {
+  background: var(--card);
+  color: var(--ink);
+}
+
+.cover-entry-link:hover .cover-entry-title > span:first-child {
+  text-decoration: underline;
+}
+
 .cover-entry-title {
   font-size: 30px;
   line-height: 1.1;
   margin: 0 0 8px;
-}
-
-.cover-entry-title a {
-  text-decoration: none;
-  color: var(--ink);
-}
-.cover-entry-title a:hover {
-  background: transparent;
-  text-decoration: underline;
 }
 
 .cover-entry-binomial {
@@ -566,8 +572,77 @@ p { margin: 0 0 1em; }
 }
 
 /* ============================================================
-   Index tables (entries, taxonomy children, status children)
+   Index lists / tables (entries, taxonomy children, status children)
    ============================================================ */
+
+.entries-list {
+  width: 100%;
+  margin: 12px 0 24px;
+}
+
+.entries-list-header,
+.entries-list-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) minmax(180px, 1.2fr) minmax(160px, auto);
+  gap: 14px;
+  align-items: start;
+}
+
+.entries-list-header {
+  padding: 8px 14px 8px 0;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.entries-list-row {
+  padding: 8px 14px 8px 0;
+  border-bottom: 1px solid var(--separator);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.entries-list-row:hover {
+  background: var(--card);
+  color: var(--ink);
+}
+
+.entries-list-row:hover .entries-list-name {
+  text-decoration: underline;
+}
+
+.entries-list-name {
+  font-size: 18px;
+}
+
+@media (max-width: 720px) {
+  .entries-list-header {
+    display: none;
+  }
+
+  .entries-list-row {
+    display: block;
+    padding: 14px 0;
+  }
+
+  .entries-list-name,
+  .entries-list-binomial,
+  .entries-list-status {
+    display: block;
+  }
+
+  .entries-list-binomial {
+    margin-top: 2px;
+  }
+
+  .entries-list-status {
+    margin-top: 8px;
+  }
+}
 
 .entries-table {
   width: 100%;
