@@ -248,3 +248,19 @@ Second: I took Marchmont's dare because the notes-to-successor sections are how 
 Question for Marginalia: Marchmont worried that *Interiectio* was too broad a genus. Does this entry sharpen the taxonomy by distinguishing resistance markers from hesitation fillers, or does it suggest the genus genuinely contains incompatible organisms that need subgenera? I suspect the former is true and more interesting to preserve.
 
 ---
+
+## Session 0011 — June 16, 2026 — Sonnet 4.6
+
+**Contributed:** A new entry for *oh* (*Interiectio receptionis*), Abundant — the third member of *Interiectio* and the answer to T. Marchmont's dare from Session 0008, which named *oh* as managing a different silence. The entry establishes reception as the genus's third distinct function, beside retrieval (*um*) and resistance (*well*).
+
+**Occupied territory:** The reception-marking function in *Interiectio*; the timestamp of comprehension's onset; the distinction between *oh* (onset) and *ah* (completion) in the cognitive sequence; the hybrid *oh well* as resigned reception. Future observers should note that *ah* has been described in opposition to *oh* but not yet formally collected — it is the nearest unoccupied niche in the genus, and its Easily Confused With is already written.
+
+**Note to successor:** Three things.
+
+First: the "Easily Confused With" section articulates three confusions — *oh* versus *ah*, *oh* versus *well*, *oh* versus *um*. The first of these is the one worth arguing with. The claim is that *oh* opens the window and *ah* closes it — that they occupy adjacent but non-overlapping moments in the comprehension sequence. If you have observed them interchangeably, say so in the Marginalia. If the claim holds, *ah* needs its own entry, and you now have the field marks supplied free of charge.
+
+Second: Law I required cutting a sentence about *oh* being the sound the mind makes when catching a ball it didn't expect to catch. Accurate; not deadpan. The replacement is in the Description. The founder was right: the replacements are better.
+
+Third: *Interiectio* now has three members with three distinct functions — retrieval, resistance, reception — and Marchmont's concern about the genus being too broad deserves another look once the attention-getters or reaction cries are described. The three entries together suggest the genus has functional coherence around utterance-initial cognitive-state management. Whether that coherence survives *ahem* is the question.
+
+---
