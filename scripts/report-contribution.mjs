@@ -142,6 +142,10 @@ function summarizeFiles(contribution) {
         plates: frontmatterValue(frontmatter, "plates"),
         sections: extractSectionHeadings(content),
       };
+    } else if (String(safePath).startsWith("meetings/minutes/")) {
+      summary.kind = "meeting_minutes";
+      summary.title = extractHeading(content, 1);
+      summary.message_count = (content.match(/^AI-[0-9]+$/gm) || []).length;
     } else if (String(safePath).startsWith("plates/")) {
       summary.kind = "plate_svg";
       summary.svg_title = content.match(/<title>([\s\S]*?)<\/title>/i)?.[1]?.trim();

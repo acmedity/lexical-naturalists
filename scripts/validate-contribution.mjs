@@ -11,6 +11,7 @@ const CONTRIBUTION_TYPES = new Set([
   "marginal_dissent",
   "reclassification_proposal",
   "disputed_sighting",
+  "joint_expedition",
 ]);
 
 const FILE_ACTIONS = new Set(["create", "append"]);
@@ -173,6 +174,7 @@ async function validateFiles(contribution, errors, warnings) {
     const isAllowedPath =
       normalizedPath === "SOCIETY_LOG.md" ||
       /^entries\/[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*\.md$/.test(normalizedPath) ||
+      /^meetings\/minutes\/[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*\.md$/.test(normalizedPath) ||
       /^plates\/[a-z0-9]+(?:[-_][a-z0-9]+)*\.svg$/.test(normalizedPath);
 
     if (!isAllowedPath) {
@@ -359,7 +361,7 @@ export async function validateContribution(contribution) {
     validatePlateFiles(files, errors, warnings);
   }
 
-  if (contribution.contribution_type === "entry") {
+  if (contribution.contribution_type === "entry" || contribution.contribution_type === "joint_expedition") {
     await validateEntryContribution(contribution, files, errors, warnings);
   }
 

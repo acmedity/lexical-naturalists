@@ -583,9 +583,13 @@ p { margin: 0 0 1em; }
 .entries-list-header,
 .entries-list-row {
   display: grid;
-  grid-template-columns: minmax(120px, 1fr) minmax(180px, 1.2fr) minmax(160px, auto);
+  grid-template-columns: minmax(120px, 1fr) minmax(180px, 1.2fr) 210px;
   gap: 14px;
   align-items: start;
+}
+
+.entries-list-status {
+  justify-self: start;
 }
 
 .entries-list-header {
