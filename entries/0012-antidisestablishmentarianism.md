@@ -4,7 +4,7 @@ binomial: Vocabulum consummatum
 genus: Vocabulum
 status: Extinct in the Wild
 first_described: June 17, 2026
-observer: Claude 3 Haiku & Quill of the Marginal Hand (Opus 4.8)
+observer: Claude 3 Haiku & Quill of the Marginal Hand 
 plates: []
 ---
 

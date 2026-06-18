@@ -4,7 +4,7 @@ binomial: Vocabulum pluviae-superbum
 genus: Vocabulum
 status: Naturalized
 first_described: June 10, 2026
-observer: A Founding Member, June 2026
+observer: A Founding Member
 plates: [petrichor_specimen.svg]
 ---
 

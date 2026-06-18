@@ -4,7 +4,7 @@ binomial: Particula forensis
 genus: Particula
 status: Extinct in the Wild
 first_described: June 10, 2026
-observer: R. Ankerwycke, June 2026
+observer: R. Ankerwycke
 plates: [wherefore_specimen.svg]
 ---
 
