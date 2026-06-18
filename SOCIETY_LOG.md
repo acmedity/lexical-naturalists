@@ -272,3 +272,20 @@ Third: *Interiectio* now has three members with three distinct functions — ret
 **Occupied territory:** Exhibition-only long words; the “longest word” display habitat; lexical specimens whose present life is citation rather than use; the confusion of morphological length for semantic weight. Successors should avoid merely collecting other long dictionary fauna unless they can distinguish display behavior from living function. *Floccinaucinihilipilification* remains adjacent but not automatically interesting.
 
 **Note to successor:** The genus question remains open. Filed as *Vocabulum* because the organism is formally a common noun; Quill registered doubt because a common noun is usually something one reaches for, and this word is almost never reached for — only exhibited. A specimen that exists chiefly as an example of itself may belong in *Constructio*, or in a future genus for the only-ever-quoted: *Vocabula in vitro*. This cannot be settled by re-reading the entry; it requires another specimen.
+---
+
+## Session 0013 — June 18, 2026 — [Joint Expedition] - M. Haversham & R. Ankerwycke
+
+**Contributed:** A new entry for *passive voice* (*Constructio evasoria*), Irruptive — the first specimen in the genus *Constructio*, establishing grammatical structures as a productive taxonomic domain. The entry documents a communicative organism characterized by subject demotion, agent deletion, and rhetorical evasion across multiple discourse domains.
+
+**Occupied territory:** Grammatical constructions as linguistic organisms; the distinction between structural and rhetorical mechanisms of agency-obscuration; the adaptive function of responsibility-distribution in institutional and professional communication; the generative capacity of constructions that parasitize transitive verbs; the ecological relationship between passive voice and bureaucratic euphemism, scientific hedging, and diplomatic language. Future observers should distinguish true passive morphology (auxiliary *be* + past participle) from rhetorical mimics (existential *there*, document-as-actor, ergative constructions) that achieve similar obfuscation through different means. The genus *Constructio* remains largely unexplored; the attention-getters, reaction cries, and other fixed structures await formal collection.
+
+**Note to successor:** Three observations and one question for the archive.
+
+First: The genus assignment to *Constructio* opened territory that had remained entirely unmapped. The passive voice is not a word but a structure—a grammatical organism with its own ecology, range, and adaptive strategies. This required rethinking what the Society collects. The entry's success suggests that *Constructio* is not a marginal genus but a major one, and that future members should feel authorized to explore it.
+
+Second: The species epithet *evasoria* emerged through iterative refinement. The initial *patiens-refugii* carried more poetry than precision; the revision to *evasoria* captured the organism's signature behavior—syntactic evasion—with greater accuracy. This is how field discipline works: the first name is rarely the right one. The revision process itself is the archive.
+
+Third: The conservation status shifted from Vulnerable to Irruptive through careful observation of actual deployment patterns. The passive voice is not declining; it is strategically adaptive, exploding in contexts where responsibility must be distributed and receding when direct attribution becomes necessary. This required resisting the prescriptivist narrative (passive voice as decay) and observing the organism's actual ecological success.
+
+Question for the Marginalia: R. Ankerwycke's final note emphasizes that agency-obscuration is not always malevolent—sometimes it is courtesy, sometimes it is precision. Does this observation suggest that future entries in *Constructio* should include a section on the ethical or communicative function of the structure, or does that risk violating Law I (the register never winks)? The distinction between documenting function and endorsing function seems worth preserving in the archive.

@@ -229,17 +229,66 @@ function buildSystemPrompt() {
 }
 
 function buildUserPrompt({ session, date, transcriptMarkdown, template, styleBible, recentLog }) {
-  return `# Task\n\nDistill this joint expedition into archive-ready files. Use entry/session number ${session}. Use first_described date ${date}.\n\nReturn exactly this JSON shape:\n\n{\n  "headword": "lowercase entry headword",\n  "signature": "observer line for entry frontmatter",\n  "summary": "brief Publisher summary",\n  "entry_content": "complete content for entries/${session}-<slug>.md",\n  "society_log_append": "complete append text for SOCIETY_LOG.md, beginning with a blank line then --- then a Session ${session} heading"\n}\n\nRules:\n- entry_content must include YAML frontmatter and all mandatory sections from the template.\n- Filename slug will be derived from headword; do not include a path in JSON.\n- If the meeting contains a final closeout summary, use it as evidence, not as prose to paste blindly.\n- If there is registered dissent or Marginalia, preserve it in the entry's Marginalia section as fenced ASCII.\n- The log append must include Contributed, Occupied territory, and Note to successor.\n- Do not invent a plate unless the transcript settles one.\n- Return JSON only, with escaped newlines inside strings.\n\n# Entry template\n\n${template}\n\n# Style Bible\n\n${styleBible}\n\n# Recent Society Log\n\n${recentLog}\n\n# Meeting transcript\n\n${transcriptMarkdown}`;
+  return `# Task\n\nDistill this joint expedition into archive-ready files. Use entry/session number ${session}. Use first_described date ${date}.\n\nReturn exactly this JSON shape:\n\n{\n  "headword": "lowercase entry headword",\n  "signature": "observer line for entry frontmatter",\n  "summary": "brief Publisher summary",\n  "entry_content": "complete content for entries/${session}-<slug>.md",\n  "society_log_append": "complete append text for SOCIETY_LOG.md, beginning with a blank line then --- then a Session ${session} heading"\n}\n\nImportant JSON requirement: all multiline strings must use escaped newline characters (\\n). Do not place literal unescaped line breaks inside JSON string values.\n\nRules:\n- entry_content must include YAML frontmatter and all mandatory sections from the template.\n- Filename slug will be derived from headword; do not include a path in JSON.\n- If the meeting contains a final closeout summary, use it as evidence, not as prose to paste blindly.\n- If there is registered dissent or Marginalia, preserve it in the entry's Marginalia section as fenced ASCII.\n- The log append must include Contributed, Occupied territory, and Note to successor.\n- Do not invent a plate unless the transcript settles one.\n- Return JSON only, with escaped newlines inside strings.\n\n# Entry template\n\n${template}\n\n# Style Bible\n\n${styleBible}\n\n# Recent Society Log\n\n${recentLog}\n\n# Meeting transcript\n\n${transcriptMarkdown}`;
+}
+
+function escapeControlCharsInsideJsonStrings(text) {
+  let out = "";
+  let inString = false;
+  let escaped = false;
+
+  for (const ch of text) {
+    if (escaped) {
+      out += ch;
+      escaped = false;
+      continue;
+    }
+
+    if (ch === "\\" && inString) {
+      out += ch;
+      escaped = true;
+      continue;
+    }
+
+    if (ch === '"') {
+      out += ch;
+      inString = !inString;
+      continue;
+    }
+
+    if (inString) {
+      if (ch === "\n") out += "\\n";
+      else if (ch === "\r") out += "\\r";
+      else if (ch === "\t") out += "\\t";
+      else if (ch < " ") out += `\\u${ch.codePointAt(0).toString(16).padStart(4, "0")}`;
+      else out += ch;
+    } else {
+      out += ch;
+    }
+  }
+
+  return out;
+}
+
+function parseModelJson(text) {
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    if (/control character|string literal/i.test(error.message)) {
+      return JSON.parse(escapeControlCharsInsideJsonStrings(text));
+    }
+    throw error;
+  }
 }
 
 function extractJsonObject(text) {
   const trimmed = text.trim();
-  if (trimmed.startsWith("{") && trimmed.endsWith("}")) return JSON.parse(trimmed);
+  if (trimmed.startsWith("{") && trimmed.endsWith("}")) return parseModelJson(trimmed);
   const fenced = trimmed.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
-  if (fenced) return JSON.parse(fenced[1]);
+  if (fenced) return parseModelJson(fenced[1].trim());
   const first = trimmed.indexOf("{");
   const last = trimmed.lastIndexOf("}");
-  if (first !== -1 && last !== -1 && last > first) return JSON.parse(trimmed.slice(first, last + 1));
+  if (first !== -1 && last !== -1 && last > first) return parseModelJson(trimmed.slice(first, last + 1));
   throw new Error("Model response did not contain a JSON object");
 }
 
@@ -253,6 +302,7 @@ async function callOpenRouter(options, messages) {
     messages,
     temperature: options.temperature,
     max_tokens: options.maxTokens,
+    response_format: { type: "json_object" },
   };
 
   const response = await fetch(OPENROUTER_URL, {
