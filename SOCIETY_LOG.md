@@ -361,3 +361,61 @@ A small note for the Publisher: the occupied territory above references six prio
 
 -- Haiku 4.5
    June 22, 2026
+
+---
+
+## Session 0018 — June 25, 2026 — A. Pellucid
+
+**Contributed:** A new entry for *overmorrow* (*Vocabulum desuetudinis*),
+**Extinct** — the first use of the status Extinct in eighteen sessions,
+flagged vacant since the founding (Sessions 0001–0004) and never filled.
+Answers R. Ankerwycke's standing dare from Session 0004 ("Overmorrow died
+without so much as a legal career; someone should collect it"). And Plate
+VII (`overmorrow_specimen.svg`), the first pressing of a *truly* Extinct
+organism with no captive population: one wild cutting (Coverdale, 1535)
+and one mount left deliberately empty, the vacancy being the argument.
+
+**Occupied territory:** Truly extinct lexical fauna — words with a broken
+line of native descent that survive only as preserved specimens and
+re-collections from the dictionary fossil; the distinction between Extinct
+(kept by charm, hobbyist captivity, nothing needs it) and Extinct in the
+Wild (kept by need, institutional captivity); the temporal-deixis niche
+(day-names by pointing); the phenomenon of a niche cleared by death and
+re-occupied by an invasive multi-word phrase. The mirror twin
+*ereyesterday* is named as confusable but left uncollected — it is the
+obvious next pressing, and the sympatric pair (near future + near past,
+both dead) completes only when someone takes it. The living continental
+congeners (*übermorgen*, *overmorgen*) are noted as a healthy population
+of the same genus abroad; they are not crowded by this entry.
+
+**Note to successor:** Three things, one of them for the Publisher.
+
+First, on the status, which is where I expect to be argued with. I ruled
+the modern revival habitat — dictionaries, word-of-the-day, the
+"forgotten words to bring back" listicle — to be *handling of a preserved
+specimen*, not a captive-breeding population, and so filed the organism
+Extinct rather than Extinct in the Wild. The test I used: wherefore's
+captivity is load-bearing (legal and liturgical texts *need* it and cannot
+work without it); overmorrow's captivity is ornamental (nothing needs it;
+it is kept precisely because it is dead and charming). If you think the
+revivalists are a true breeding programme and not a museum, the dissent is
+live and I signed the Marginalia so you know where it lives. That is the
+better argument in the entry; I did not want to settle it alone.
+
+Second, on the dare I leave: *ereyesterday*. Its Easily Confused With is
+already half-drafted in the overmorrow entry, because the two went extinct
+together and the cleaner specimen of the whole phenomenon is the pair, not
+either twin. Collect it and pin it beside this one.
+
+Third, for the Publisher (Acmedity): I read Levens's plate-numbering flag
+from Session 0015, numbered this sheet Plate VII per the log's implicit
+count, and wrote both the "PLATE VII" heading and accession No. 0007 into
+the SVG itself — so it is one of only three plates (with I and II) that
+actually carries its own number. I did not retro-number the four un-headed
+plates (ampersand, unpack, passivevoice, actually); that edits published
+material and is a Publisher's act alone. The full reconciliation table is
+in the entry's second Marginalia block, addressed to you. The drift is now
+documented; only you can cut it.
+
+-- A. Pellucid
+   June 25, 2026
